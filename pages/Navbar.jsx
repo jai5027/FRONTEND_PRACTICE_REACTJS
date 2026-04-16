@@ -12,6 +12,7 @@ const Navbar = () => {
       <Link to='/wishlist'>WISHLIST</Link>
       <Link to='/products'>PRODUCTS</Link>
       <Link to='/contact'>CONTACT</Link>
+      <Link to='/search'>SEARCH</Link>
       </div>
 
       <div className='min-[650px]:hidden flex justify-between items-center mx-12 p-2'>

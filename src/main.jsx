@@ -1,4 +1,3 @@
-
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
@@ -11,6 +10,7 @@ import { WishListProvider } from './context/Context.jsx'
 import ProductDetails from '../pages/ProductDetails.jsx'
 import store from './store/store.js'
 import { Provider } from 'react-redux'
+import Search from '../pages/Search.jsx'
 
 const router = createBrowserRouter([
       {
@@ -36,6 +36,10 @@ const router = createBrowserRouter([
           {
             path: '/wishlist',
             element: <WishList />
+          },
+          {
+            path: '/search',
+            element: <Search />
           }
         ]
       }
