@@ -1,16 +1,11 @@
-import { Outlet } from "react-router-dom"
-import Navbar from "../pages/Navbar"
+import Header from "./Components/Header"
 
 function App() {
 
 
   return (
     <>
-    
-<Navbar />
- <main className="pt-16">
-        <Outlet />
-      </main>
+  <Header />
     </>
   )
 }
