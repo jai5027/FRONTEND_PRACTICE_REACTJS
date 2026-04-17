@@ -6,6 +6,7 @@ const Navbar = () => {
   const [menubar, setMenubar] = useState(false)
   return (
     <>
+    
     <div className='fixed top-0 left-0 right-0 bg-black/50 font-semibold z-50'>
       <div className='max-[650px]:hidden flex justify-evenly items-center p-2'>
       <Link to='/'>HOME</Link>

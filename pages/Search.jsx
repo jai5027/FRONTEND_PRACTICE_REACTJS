@@ -2,15 +2,14 @@ import React, { useState, useEffect, useRef } from 'react'
 
 const Search = () => {
    const [query, setQuery] = useState('')
-   const [mydata, setMydata] = useState('')
+   const [mydata] = useState(() => {
+  return JSON.parse(localStorage.getItem("formData")) || null;
+});
    const boxRef = useRef()
    
    const data = ["apple", "boy", "cat", "dog", "emiway"]
 
-   useEffect(() => {
-   const maal = JSON.parse(localStorage.getItem("formData"))
-  setMydata(maal)
-   }, [])
+   
 
 useEffect(() => {
   const handleClick = (e) => {
