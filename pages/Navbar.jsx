@@ -13,6 +13,7 @@ const Navbar = () => {
       <Link to='/products'>PRODUCTS</Link>
       <Link to='/contact'>CONTACT</Link>
       <Link to='/search'>SEARCH</Link>
+      <Link to='/input'>INPUT</Link>
       </div>
 
       <div className='min-[650px]:hidden flex justify-between items-center mx-12 p-2'>

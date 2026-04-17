@@ -11,6 +11,7 @@ import ProductDetails from '../pages/ProductDetails.jsx'
 import store from './store/store.js'
 import { Provider } from 'react-redux'
 import Search from '../pages/Search.jsx'
+import Input from '../pages/Input.jsx'
 
 const router = createBrowserRouter([
       {
@@ -40,6 +41,10 @@ const router = createBrowserRouter([
           {
             path: '/search',
             element: <Search />
+          },
+          {
+            path: '/input',
+            element: <Input />
           }
         ]
       }

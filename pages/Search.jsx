@@ -2,9 +2,15 @@ import React, { useState, useEffect, useRef } from 'react'
 
 const Search = () => {
    const [query, setQuery] = useState('')
+   const [mydata, setMydata] = useState('')
    const boxRef = useRef()
    
    const data = ["apple", "boy", "cat", "dog", "emiway"]
+
+   useEffect(() => {
+   const maal = JSON.parse(localStorage.getItem("formData"))
+  setMydata(maal)
+   }, [])
 
 useEffect(() => {
   const handleClick = (e) => {
@@ -18,6 +24,12 @@ useEffect(() => {
 
   return (
     <>
+    <div>
+  <h1>{mydata.name}</h1>
+  <h1>{mydata.email}</h1>
+  <h1>{mydata.message}</h1>
+    </div>
+
     <div ref={boxRef}>
        <input 
         placeholder='Enter Something...'
