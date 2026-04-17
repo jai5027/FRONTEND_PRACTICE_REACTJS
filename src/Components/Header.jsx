@@ -15,7 +15,9 @@ const Header = () => {
               visibility: toggle ? "visible" : "hidden"
       }}
     >
-        <div className='w-150 bg-white h-full'>
+        <div className='w-150 bg-white h-full duration-500 absolute' 
+        style={{ left: toggle ? '0%' : '-100%' }}
+        >
             
         </div>
     </div>
