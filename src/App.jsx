@@ -1,13 +1,11 @@
-import Header from "./Components/Header.jsx"
-import Category from "./Components/Category.jsx"
+import Search from "./Components/Search.jsx"
 
 function App() {
 
 
   return (
     <>
-  <Header />
-  <Category />
+ <Search />
     </>
   )
 }
