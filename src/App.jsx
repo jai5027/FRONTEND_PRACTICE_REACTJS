@@ -6,7 +6,7 @@ function App() {
 
   return (
     <>
- <div className='h-screen text-white bg-gray-950'>
+ <div className='w-full text-white bg-gray-950'>
  <SearchBar />  
  <Tab />
  <ResultGrid />
