@@ -30,3 +30,7 @@ const collectionSlice = createSlice({
         }
       }
 })
+
+export const { addCollection, removeCollection, clearCollection } = collectionSlice.actions 
+
+export default collectionSlice.reducer

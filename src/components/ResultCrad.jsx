@@ -6,7 +6,7 @@ const ResultCrad = ({ item }) => {
        
       const oldData = JSON.parse(localStorage.getItem('collection')) || []
 
-      const newData = {...oldData, item}
+      const newData = [...oldData, item]
 
       localStorage.setItem('collection', JSON.stringify(newData))
   }
