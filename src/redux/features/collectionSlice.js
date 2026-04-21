@@ -9,7 +9,7 @@ const collectionSlice = createSlice({
       initialState,
       reducers: {
         addCollection: (state, action) => {
-          const alreadyExists = state.item.find(
+          const alreadyExists = state.items.find(
           item => item.id === action.payload.id        
           )
 

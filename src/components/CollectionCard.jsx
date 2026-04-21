@@ -1,14 +1,13 @@
 import { useDispatch } from "react-redux"
-import { addCollection } from "../redux/features/collectionSlice.js"
+import { removeCollection } from "../redux/features/collectionSlice.js" 
 
-const ResultCrad = ({ item }) => {
+const CollectionCard = ({ item }) => {
 
-  const dispatch = useDispatch()
+    const dispatch = useDispatch()
 
-  const addToCollection = (item) => {
-       dispatch(addCollection(item))
-     
-  }
+    const removeSave = (item) => {
+        dispatch(removeCollection(item.id))
+    }
 
   return (
     <div className='w-72 h-72 relative rounded-xl overflow-hidden'>
@@ -19,11 +18,12 @@ const ResultCrad = ({ item }) => {
 
         <div id='bottom' className='w-full flex justify-center gap-5 px-6 py-10 absolute bottom-0'>
       <h2 className='line-clamp-1 text-xl font-semibold capitalize'>{item.title}</h2>
-      <button onClick={() => addToCollection(item)} 
-      className='bg-indigo-600 px-3 py-1 cursor-pointer rounded font-medium'>SAVE</button>
+      <button onClick={() => removeSave(item)
+      } 
+      className='bg-indigo-600 px-3 py-1 cursor-pointer rounded font-medium'>REMOVE</button>
         </div>
     </div>
   )
 }
 
-export default ResultCrad
+export default CollectionCard
