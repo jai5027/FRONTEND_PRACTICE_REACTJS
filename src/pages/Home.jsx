@@ -7,7 +7,7 @@ const Home = () => {
     const { query } = useSelector((store) => store.search)
 
   return (
-    <div>
+    <div >
       <SearchBar />  
 
   {query != '' ? <div> <Tab /> <ResultGrid /> </div> : ''}

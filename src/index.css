@@ -7,3 +7,7 @@
 #bottom {
     background: linear-gradient(transparent, black);
 }
+
+body {
+  background-color: #030712; /* gray-950 */
+}

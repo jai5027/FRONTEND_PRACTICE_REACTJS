@@ -14,7 +14,7 @@ const SearchBar = () => {
 
   return (
     <div>
-       <form onSubmit={handleSubmit} className='flex bg-gray-900 gap-5 p-7 px-50'>
+       <form onSubmit={handleSubmit} className='flex gap-5 p-7 px-50'>
           <input className='w-full border-2 px-6 text-xl'
           required
           value={text}
