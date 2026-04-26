@@ -1,6 +1,6 @@
 import { create } from 'zustand'
 
-const useCreate = create((set) => {
+const useCreate = create((set, get) => {
     return {
         count: 1,
         name: 'jai',
@@ -8,6 +8,13 @@ const useCreate = create((set) => {
             set((state) => ({
                 count: state.count + 1
             }))
+        },
+
+        capital: () => {
+            const { name } = get()
+            set({
+                name: name.charAt(0).toUpperCase() + name.slice(1)
+            })
         }
     }
 })
