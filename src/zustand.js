@@ -1,9 +1,14 @@
 import { create } from 'zustand'
 
-const useCreate = create(() => {
+const useCreate = create((set) => {
     return {
         count: 1,
-        name: 'jai'
+        name: 'jai',
+        increment: () => {
+            set({
+                count: 5
+            })
+        }
     }
 })
 
