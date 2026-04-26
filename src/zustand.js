@@ -5,9 +5,9 @@ const useCreate = create((set) => {
         count: 1,
         name: 'jai',
         increment: () => {
-            set({
-                count: 5
-            })
+            set((state) => ({
+                count: state.count + 1
+            }))
         }
     }
 })
